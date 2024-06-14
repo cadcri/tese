@@ -1,1 +1,2 @@
-TESE
+- ``./record_all.sh <path_to_libperf-jvmti.so>`` : do all the records. ex : ``./record_all.sh ~/lib64/libperf-jvmti.so ``
+- ``./percent.sh ./results/<file>.perf-folded <pattern>`` : show the percent of samplings that contain this pattern. ex : `` ./percent.sh ./results/CountOnesEATest.perf-folded java/util/List``
