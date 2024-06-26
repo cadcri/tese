@@ -27,14 +27,14 @@ if [ ! -d "$results_dir" ]; then
 fi
 
 # Run perf record
-perf record -g -k mono java -cp "$classpath" -XX:+PreserveFramePointer -agentpath:"$jvmtisopath" "$classinput"
+perf record -g -k mono java -cp "$classpath" -XX:+PreserveFramePointer -agentpath:"$jvmtisopath":perf-map-agent/out/libperfmap.so "$classinput"
 
 # Inject JIT symbols into the perf data
 perf inject --jit -i perf.data > "$perf_data"
 rm perf.data
 
 # Generate folded stack traces
-perf script -i "$perf_data" | flamegraph/stackcollapse-perf.pl --inline > "$perf_folded"
+perf script -F+srcline -i "$perf_data" | flamegraph/stackcollapse-perf.pl > "$perf_folded"
 
 # Generate flame graph
 flamegraph/flamegraph.pl "$perf_folded" > "$flamegraph_svg"
