@@ -1,44 +1,63 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-#define MAX_NUMBERS 10000000  // adjust this if needed
+void quickSort(int arr[], int begin, int end) {
+	if (begin >= end)
+		return;
+	int partitionIndex = partition(arr, begin, end);
+	quickSort(arr, begin, partitionIndex - 1);
+	quickSort(arr, partitionIndex + 1, end);
+}
 
-int compare(const void *a, const void *b) {
-	return (*(int *)a - *(int *)b);
+int partition(int arr[], int begin, int end) {
+	int pivot = arr[end];
+	int i = begin - 1;
+
+	for (int j = begin; j < end; j++) {
+		if (arr[j] <= pivot) {
+			i++;
+			int tmp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = tmp;
+		}
+	}
+
+	int tmp = arr[i + 1];
+	arr[i + 1] = arr[end];
+	arr[end] = tmp;
+
+	return i + 1;
 }
 
 int main(int argc, char *argv[]) {
-	if (argc != 2) {
+	if (argc < 2) {
 		fprintf(stderr, "Usage: %s <filename>\n", argv[0]);
 		return 1;
 	}
 
 	FILE *file = fopen(argv[1], "r");
 	if (!file) {
-		perror("fopen");
+		perror("Error opening file");
 		return 1;
 	}
 
-	int *numbers = malloc(MAX_NUMBERS * sizeof(int));
-	if (!numbers) {
-		perror("malloc");
+	int *array = malloc(sizeof(int) * 1000000);
+	if (!array) {
+		perror("Memory allocation failed");
 		fclose(file);
 		return 1;
 	}
 
 	int count = 0;
-	while (fscanf(file, "%d", &numbers[count]) == 1) {
+	while (count < 1000000 && fscanf(file, "%d", &array[count]) == 1) {
 		count++;
-		if (count >= MAX_NUMBERS) {
-			fprintf(stderr, "Too many numbers\n");
-			break;
-		}
 	}
 
 	fclose(file);
 
-	qsort(numbers, count, sizeof(int), compare);
+	quickSort(array, 0, count - 1);
 
-	free(numbers);
+	free(array);
 	return 0;
 }

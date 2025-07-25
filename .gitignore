@@ -2,4 +2,7 @@
 .idea
 perf.data*
 
-**/results
+**/results/
+
+*.jar
+
