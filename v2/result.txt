@@ -1,0 +1,356 @@
+     5    203    198 :  18   if (arr[j] <= pivot) {
+    98    112     14 :  21   arr[i] = arr[j];
+    34     80     46 :  17   for (int j = begin; j < end; j++) {
+    58     74     16 :  22   arr[j] = tmp;
+    31     64     33 :  20   int tmp = arr[i];
+   -25     31     56 :  19   i++;
+    17     17      0 :   5   0000000000052090 <__isoc99_fscanf@@GLIBC_2.7>:
+    16     16      0 :  53   while (count < 1000000 && fscanf(file, "%d", &array[count]) == 1) {
+    14     14      0 :  29   int tmp = arr[i + 1];
+     6      8      2 :  14   int pivot = arr[end];
+     8      8      0 :  27   arr[i + 1] = arr[end];
+     4      7      3 :   6   if (begin >= end)
+     6      6      0 :   5   0000000000083790 <_IO_sputbackc@@GLIBC_2.2.5>:
+  -148      5    153 :  10   quickSort(arr, partitionIndex + 1, end);
+  -194      4    198 :  18   int partition(int arr[], int begin, int end) {
+     4      4      0 :  28   arr[end] = tmp;
+     2      4      2 :   9   quickSort(arr, begin, partitionIndex - 1);
+     2      4      2 :   9   void quickSort(int arr[], int begin, int end) {
+     2      2      0 :  11   }
+     2      2      0 :   5   0000000000001040 <__isoc99_fscanf@plt>:
+  -197      1    198 :  18   for (int j = begin; j < end; j++) {
+     1      1      0 :   5   0000000000048c00 <__strtol_internal@@GLIBC_2.2.5>:
+     1      1      0 :   5   0000000000082eb0 <__uflow@@GLIBC_2.2.5>:
+     1      1      0 :   5   00000000000f8190 <__read@@GLIBC_2.2.5>:
+    -2      1      3 :   6   alx_poll():
+     1      1      0 :   7   return;
+     0      0      0 :  13   int partitionIndex = partition(arr, begin, end);
+    -2      0      2 :  14   quickSort(arr, begin, partitionIndex - 1);
+    -2      0      2 :  15   int i = begin - 1;
+    -2      0      2 :  15   quickSort(arr, partitionIndex + 1, end);
+     0      0      0 :  16   }
+    -9      0      9 :  26   }
+     0      0      0 :  27   }
+     0      0      0 :  31   }
+     0      0      0 :  31   return i + 1;
+     0      0      0 :  33   arr[end] = tmp;
+     0      0      0 :  34   if (argc < 2) {
+     0      0      0 :  35   fprintf(stderr, "Usage: %s <filename>\n", argv[0]);
+     0      0      0 :  35   return i + 1;
+     0      0      0 :  36   }
+     0      0      0 :  36   return 1;
+     0      0      0 :  38   int main(int argc, char *argv[]) {
+     0      0      0 :  39   }
+     0      0      0 :   3   Disassembly of section .plt:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :   3   Disassembly of section .text:
+     0      0      0 :  40   if (!file) {
+     0      0      0 :  41   FILE *file = fopen(argv[1], "r");
+     0      0      0 :  41   perror("Error opening file");
+     0      0      0 :  42   return 1;
+    -5      0      5 :  45   }
+    -1      0      1 :  46   if (!array) {
+    -3      0      3 :  47   int *array = malloc(sizeof(int) * 1000000);
+    -3      0      3 :  47   perror("Memory allocation failed");
+     0      0      0 :  48   fclose(file);
+     0      0      0 :  49   return 1;
+     0      0      0 :   5   0000000000001199 <quickSort>:
+     0      0      0 :   5   0000000000001202 <partition>:
+     0      0      0 :   5   000000000000133a <main>:
+     0      0      0 :   5   0000000000001e70 <alx_poll>:
+     0      0      0 :  52   }
+     0      0      0 :  53   while (count < 1000000 && fscanf(file, "%d", &array[count]) == 1) {
+     0      0      0 :  54   count++;
+     0      0      0 :  54   int count = 0;
+     0      0      0 :  57   }
+     0      0      0 :  59   fclose(file);
+     0      0      0 :   5   #include <stdio.h>
+     0      0      0 :  60   quickSort(array, 0, count - 1);
+     0      0      0 :  62   free(array);
+     0      0      0 :  62   return 0;
+    -3      0      3 :   6   #include <stdlib.h>
+    -3      0      3 :   6   main():
+    -3      0      3 :   6   partition():
+    -3      0      3 :   6   quickSort():
+     0      0      0 :   7   #include <string.h>
+    -1      0      1 :   8   return;
+    -2      0      2 :   9   int partitionIndex = partition(arr, begin, end);
+        98 : java/lang/Character.java:11189
+        93 : java/util/concurrent/locks/ReentrantLock.java:231
+        83 : java/lang/CharacterDataLatin1.java:250
+        73 : java/lang/StringLatin1.java:764
+        67 : java/nio/charset/CharsetDecoder.java:588
+        53 : java/lang/StringCoding.java:53
+        47 : java/lang/String.java:3781
+        44 : java/lang/StringLatin1.java:763
+        42 : java/io/BufferedReader.java:350
+        37 : java/util/concurrent/locks/ReentrantLock.java:225
+        36 : java/lang/CharacterData.java:78
+        35 : java/lang/StringLatin1.java:571
+        31 : java/lang/Integer.java:624
+        24 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:643
+        21 : java/lang/StringUTF16.java:161
+        20 : java/io/BufferedReader.java:388
+        18 : java/lang/String.java:4763
+        17 : java/lang/Integer.java:668
+        16 : java/lang/StringLatin1.java:576
+        15 : java/io/BufferedReader.java:390
+        13 : jdk/internal/misc/InternalLock.java:78
+        12 : java/io/BufferedReader.java:121
+        11 : java/io/BufferedReader.java:389
+        10 : java/nio/Buffer.java:787
+         9 : java/io/BufferedReader.java:436
+         9 : java/lang/CharacterDataLatin1.java:251
+         9 : java/util/concurrent/locks/AbstractOwnableSynchronizer.java:74
+         8 : java/io/InputStreamReader.java:188
+         8 : java/lang/Integer.java:660
+         8 : java/lang/Integer.java:664
+         8 : java/lang/String.java:4821
+         7 : java/lang/Integer.java:665
+         7 : java/util/concurrent/locks/ReentrantLock.java:175
+         7 : java/util/concurrent/locks/ReentrantLock.java:224
+         7 : jdk/internal/misc/Blocker.java:70
+         6 : java/io/BufferedReader.java:403
+         6 : java/lang/Integer.java:661
+         6 : java/util/concurrent/locks/ReentrantLock.java:494
+         5 : java/lang/Integer.java:669
+         5 : java/lang/StringCoding.java:52
+         5 : java/lang/StringLatin1.java:573
+         5 : java/util/Arrays.java:3821
+         5 : java/util/concurrent/locks/ReentrantLock.java:322
+         4 : java/lang/Integer.java:643
+         4 : java/lang/StringUTF16.java:162
+         3 : java/io/BufferedReader.java:343
+         3 : java/io/BufferedReader.java:345
+         3 : jdk/internal/util/Preconditions.java:396
+         2 : java/io/BufferedReader.java:347
+         2 : java/io/BufferedReader.java:408
+         2 : java/io/BufferedReader.java:418
+         2 : java/lang/String.java:307
+         2 : java/nio/Buffer.java:309
+         2 : java/util/concurrent/locks/AbstractOwnableSynchronizer.java:84
+         2 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:1059
+         2 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:554
+         2 : java/util/concurrent/locks/ReentrantLock.java:173
+         2 : jdk/internal/misc/InternalLock.java:74
+         1 : java/io/BufferedReader.java:344
+         1 : java/io/BufferedReader.java:359
+         1 : java/io/BufferedReader.java:363
+         1 : java/io/BufferedReader.java:364
+         1 : java/io/BufferedReader.java:371
+         1 : java/lang/CharacterDataLatin1.java:252
+         1 : java/lang/Character.java:11137
+         1 : java/lang/Integer.java:670
+         1 : java/lang/Integer.java:778
+         1 : java/lang/String.java:1519
+         1 : java/lang/String.java:1532
+         1 : java/lang/String.java:3779
+         1 : java/lang/String.java:4761
+         1 : java/lang/String.java:4762
+         1 : java/lang/String.java:4768
+         1 : java/lang/String.java:4770
+         1 : java/lang/StringLatin1.java:46
+         1 : java/lang/StringLatin1.java:580
+         1 : java/lang/StringUTF16.java:180
+         1 : java/lang/StringUTF16.java:185
+         1 : java/nio/Buffer.java:361
+         1 : java/nio/ByteBuffer.java:1481
+         1 : java/util/concurrent/locks/ReentrantLock.java:152
+         1 : java/util/concurrent/locks/ReentrantLock.java:174
+         1 : java/util/concurrent/locks/ReentrantLock.java:177
+         1 : java/util/concurrent/locks/ReentrantLock.java:235
+         1 : jdk/internal/misc/Blocker.java:69
+         0 : java/io/BufferedReader.java:115
+         0 : java/io/BufferedReader.java:120
+         0 : java/io/BufferedReader.java:349
+         0 : java/io/BufferedReader.java:352
+         0 : java/io/BufferedReader.java:353
+         0 : java/io/BufferedReader.java:354
+         0 : java/io/BufferedReader.java:369
+         0 : java/io/BufferedReader.java:370
+         0 : java/io/BufferedReader.java:372
+         0 : java/io/BufferedReader.java:373
+         0 : java/io/BufferedReader.java:375
+         0 : java/io/BufferedReader.java:382
+         0 : java/io/BufferedReader.java:383
+         0 : java/io/BufferedReader.java:384
+         0 : java/io/BufferedReader.java:391
+         0 : java/io/BufferedReader.java:393
+         0 : java/io/BufferedReader.java:397
+         0 : java/io/BufferedReader.java:398
+         0 : java/io/BufferedReader.java:400
+         0 : java/io/BufferedReader.java:402
+         0 : java/io/BufferedReader.java:405
+         0 : java/io/BufferedReader.java:406
+         0 : java/io/BufferedReader.java:409
+         0 : java/io/BufferedReader.java:410
+         0 : java/io/BufferedReader.java:412
+         0 : java/io/BufferedReader.java:415
+         0 : java/io/BufferedReader.java:416
+         0 : java/io/BufferedReader.java:417
+         0 : java/io/FileInputStream.java:106
+         0 : java/io/FileReader.java:60
+         0 : java/lang/AbstractStringBuilder.java:101
+         0 : java/lang/AbstractStringBuilder.java:1657
+         0 : java/lang/AbstractStringBuilder.java:1693
+         0 : java/lang/AbstractStringBuilder.java:195
+         0 : java/lang/AbstractStringBuilder.java:99
+         0 : java/lang/Integer.java:623
+         0 : java/lang/Integer.java:627
+         0 : java/lang/Integer.java:628
+         0 : java/lang/Integer.java:632
+         0 : java/lang/Integer.java:633
+         0 : java/lang/Integer.java:638
+         0 : java/lang/Integer.java:641
+         0 : java/lang/Integer.java:642
+         0 : java/lang/Integer.java:644
+         0 : java/lang/Integer.java:646
+         0 : java/lang/Integer.java:647
+         0 : java/lang/Integer.java:648
+         0 : java/lang/Integer.java:651
+         0 : java/lang/Integer.java:652
+         0 : java/lang/Integer.java:656
+         0 : java/lang/Integer.java:658
+         0 : java/lang/Integer.java:662
+         0 : java/lang/Integer.java:666
+         0 : java/lang/Integer.java:672
+         0 : java/lang/Math.java:2115
+         0 : java/lang/StringBuilder.java:106
+         0 : java/lang/StringBuilder.java:119
+         0 : java/lang/StringBuilder.java:179
+         0 : java/lang/StringBuilder.java:233
+         0 : java/lang/StringBuilder.java:253
+         0 : java/lang/StringBuilder.java:475
+         0 : java/lang/StringCoding.java:51
+         0 : java/lang/StringCoding.java:54
+         0 : java/lang/StringCoding.java:57
+         0 : java/lang/String.java:1507
+         0 : java/lang/String.java:1554
+         0 : java/lang/String.java:1555
+         0 : java/lang/String.java:1557
+         0 : java/lang/String.java:303
+         0 : java/lang/String.java:304
+         0 : java/lang/String.java:3780
+         0 : java/lang/String.java:4767
+         0 : java/lang/String.java:4769
+         0 : java/lang/String.java:4771
+         0 : java/lang/String.java:4772
+         0 : java/lang/String.java:4775
+         0 : java/lang/String.java:4776
+         0 : java/lang/String.java:4777
+         0 : java/lang/String.java:4783
+         0 : java/lang/String.java:4784
+         0 : java/lang/String.java:4786
+         0 : java/lang/String.java:4787
+         0 : java/lang/String.java:4788
+         0 : java/lang/String.java:4791
+         0 : java/lang/String.java:4792
+         0 : java/lang/String.java:4793
+         0 : java/lang/String.java:4794
+         0 : java/lang/String.java:4795
+         0 : java/lang/String.java:4796
+         0 : java/lang/String.java:4799
+         0 : java/lang/String.java:4800
+         0 : java/lang/String.java:4802
+         0 : java/lang/String.java:4813
+         0 : java/lang/String.java:4832
+         0 : java/lang/StringLatin1.java:47
+         0 : java/lang/StringLatin1.java:574
+         0 : java/lang/StringLatin1.java:577
+         0 : java/lang/StringLatin1.java:579
+         0 : java/lang/StringLatin1.java:766
+         0 : java/lang/StringUTF16.java:1419
+         0 : java/lang/StringUTF16.java:179
+         0 : java/lang/StringUTF16.java:181
+         0 : java/lang/StringUTF16.java:183
+         0 : java/lang/StringUTF16.java:75
+         0 : java/lang/System.java:2589
+         0 : java/lang/Thread.java:1509
+         0 : java/nio/Buffer.java:300
+         0 : java/nio/Buffer.java:521
+         0 : java/nio/Buffer.java:522
+         0 : java/nio/Buffer.java:533
+         0 : java/nio/ByteBuffer.java:1551
+         0 : java/nio/ByteBuffer.java:1565
+         0 : java/nio/CharBuffer.java:1461
+         0 : java/nio/CharBuffer.java:1481
+         0 : java/nio/charset/CharsetDecoder.java:576
+         0 : java/nio/charset/CharsetDecoder.java:577
+         0 : java/nio/charset/CharsetDecoder.java:579
+         0 : java/nio/charset/CharsetDecoder.java:580
+         0 : java/nio/charset/CharsetDecoder.java:586
+         0 : java/nio/charset/CharsetDecoder.java:589
+         0 : java/nio/charset/CharsetDecoder.java:591
+         0 : java/nio/charset/CharsetDecoder.java:592
+         0 : java/nio/charset/CharsetDecoder.java:594
+         0 : java/nio/charset/CharsetDecoder.java:595
+         0 : java/nio/charset/CharsetDecoder.java:596
+         0 : java/nio/charset/CharsetDecoder.java:599
+         0 : java/nio/charset/CharsetDecoder.java:604
+         0 : java/nio/charset/CharsetDecoder.java:605
+         0 : java/nio/charset/CharsetDecoder.java:606
+         0 : java/nio/charset/CharsetDecoder.java:607
+         0 : java/nio/charset/CharsetDecoder.java:609
+         0 : java/nio/charset/CharsetDecoder.java:611
+         0 : java/nio/charset/CharsetDecoder.java:612
+         0 : java/nio/charset/CharsetDecoder.java:614
+         0 : java/nio/charset/CharsetDecoder.java:615
+         0 : java/nio/charset/CharsetDecoder.java:616
+         0 : java/nio/charset/CharsetDecoder.java:620
+         0 : java/nio/charset/CharsetDecoder.java:623
+         0 : java/nio/charset/CharsetDecoder.java:624
+         0 : java/nio/charset/CharsetDecoder.java:627
+         0 : java/nio/charset/CharsetDecoder.java:628
+         0 : java/nio/charset/CoderResult.java:119
+         0 : java/nio/charset/CoderResult.java:128
+         0 : java/nio/charset/CoderResult.java:138
+         0 : java/nio/charset/CoderResult.java:148
+         0 : java/nio/charset/CoderResult.java:159
+         0 : java/nio/charset/CoderResult.java:173
+         0 : java/nio/charset/CoderResult.java:174
+         0 : java/nio/charset/CoderResult.java:175
+         0 : java/nio/HeapByteBuffer.java:162
+         0 : java/nio/HeapByteBuffer.java:359
+         0 : java/nio/HeapByteBuffer.java:362
+         0 : java/nio/HeapByteBuffer.java:363
+         0 : java/util/Arrays.java:3820
+         0 : java/util/Arrays.java:3853
+         0 : java/util/Arrays.java:3854
+         0 : java/util/Arrays.java:3856
+         0 : java/util/Arrays.java:3863
+         0 : java/util/Arrays.java:3864
+         0 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:1060
+         0 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:545
+         0 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:569
+         0 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:644
+         0 : java/util/concurrent/locks/AbstractQueuedSynchronizer.java:645
+         0 : java/util/concurrent/locks/LockSupport.java:177
+         0 : java/util/concurrent/locks/LockSupport.java:178
+         0 : java/util/concurrent/locks/LockSupport.java:179
+         0 : java/util/concurrent/locks/LockSupport.java:181
+         0 : java/util/concurrent/locks/ReentrantLock.java:153
+         0 : java/util/concurrent/locks/ReentrantLock.java:176
+         0 : java/util/concurrent/locks/ReentrantLock.java:180
+         0 : java/util/concurrent/locks/ReentrantLock.java:227
+         0 : java/util/concurrent/locks/ReentrantLock.java:228
+         0 : java/util/concurrent/locks/ReentrantLock.java:230
+         0 : java/util/concurrent/locks/ReentrantLock.java:233
+         0 : jdk/internal/misc/Blocker.java:71
+         0 : jdk/internal/misc/Blocker.java:74
+         0 : jdk/internal/misc/Blocker.java:75
+         0 : jdk/internal/misc/Blocker.java:77
+         0 : jdk/internal/misc/Blocker.java:79
+         0 : jdk/internal/misc/Blocker.java:80
+         0 : jdk/internal/misc/Blocker.java:84
+         0 : jdk/internal/misc/VM.java:110
+         0 : jdk/internal/util/Preconditions.java:397
+         0 : sun/nio/cs/UTF_8.java:411
+         0 : sun/nio/cs/UTF_8.java:412
+         0 : sun/nio/cs/UTF_8.java:414
